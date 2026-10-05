@@ -1,0 +1,43 @@
+.searchPage {
+  background-color: #111;
+  min-height: 100vh;
+  padding-top: 100px;
+  color: white;
+}
+
+.searchPage__results {
+  padding: 20px 40px;
+}
+
+.searchPage__results h2 {
+  margin-bottom: 20px;
+}
+
+.searchPage__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.searchPage__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.searchPage__card:hover {
+  transform: scale(1.05);
+}
+
+.searchPage__card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.searchPage__card span {
+  font-size: 0.85rem;
+  color: #ccc;
+}
